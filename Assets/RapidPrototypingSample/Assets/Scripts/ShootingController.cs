@@ -73,14 +73,7 @@ public class ShootingController : MonoBehaviour
         }
     }
 
-    private void LookAt2d(Vector2 dir)
-    {
-        transform.up = dir;
-/*        var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, angle);
-        print(transform.rotation);
-        Debug.DrawLine(transform.position, (transform.up + transform.position) * 5);*/
-    }
+    private void LookAt2d(Vector2 dir) => transform.up = dir;
 
     private void Update() => _currentCooldown -= Time.deltaTime;
 }
