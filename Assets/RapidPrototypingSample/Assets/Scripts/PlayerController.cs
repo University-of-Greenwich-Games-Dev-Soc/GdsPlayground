@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D _rigidbody;
     [SerializeField] private float _moveSpeed;
     [SerializeField] private ShootingController _shootingController;
-    [SerializeField] float _health = 2;
+    [SerializeField] private float _health = 2;
     
     [Header("Bindings"), SerializeField]
     private KeyCode _moveUpKey = KeyCode.UpArrow;

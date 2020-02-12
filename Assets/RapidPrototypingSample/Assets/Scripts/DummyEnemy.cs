@@ -6,7 +6,7 @@ public class DummyEnemy : MonoBehaviour
 {
     [SerializeField] private ShootingController _controller;
     [SerializeField] private int _bulletCount = 20;
-    [SerializeField] float _health = 2;
+    [SerializeField] private float _health = 2;
 
     // Update is called once per frame
     private void Update()
